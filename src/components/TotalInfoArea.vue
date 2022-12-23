@@ -7,7 +7,7 @@
         class="image-area d-flex flex-column justify-content-center align-items-center"
       >
         <span class="bg-dark text-white rounded-pill">NEW</span>
-        <img src="../assets/ibiza2.png" alt="" class="img-fluid" />
+        <img src="@/assets/ibiza2.png" alt="" class="img-fluid" />
       </div>
       <div class="total-price-area flex-fill d-flex flex-column align-self-end">
         <span class="total-text mb-0">TOTAL</span>
