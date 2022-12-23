@@ -1,21 +1,33 @@
 <template>
   <div class="row">
-    <div class="col-lg-6 col-sm-12">
-      <ModelCard
-        image="./src/assets/ibiza.png"
-        text="<strong>193.500 TL</strong>'den başlayan fiyatlarla"
-      />
-    </div>
-    <div class="col-lg-6 col-sm-12">
-      <ModelCard
-        image="./src/assets/arona.png"
-        text="<strong>200.000 TL</strong>'den başlayan fiyatlarla"
-      />
+    <div class="col-lg-6 col-sm-12" v-for="model in models" :key="model.id">
+      <ModelCard :model="model" />
     </div>
   </div>
 </template>
 
 <script setup>
 import ModelCard from "@/components/ModelCard.vue";
-import TotalInfoArea from "@/components/TotalInfoArea.vue";
+</script>
+<script>
+export default {
+  data() {
+    return {
+      models: {
+        model1: {
+          id: 1,
+          text: "<strong>193.500 TL</strong>'den başlayan fiyatlarla",
+          image: "./src/assets/ibiza.png",
+          selected: false,
+        },
+        model2: {
+          id: 2,
+          text: "<strong>200.000 TL</strong>'den başlayan fiyatlarla",
+          image: "./src/assets/arona.png",
+          selected: false,
+        },
+      },
+    };
+  },
+};
 </script>

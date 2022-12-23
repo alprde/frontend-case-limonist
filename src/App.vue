@@ -14,7 +14,7 @@ import NavigationBar from "@/components/NavigationBar.vue";
       <RouterView />
     </div>
 
-    <div class="container position-fixed bottom-0 mb-5">
+    <div class="container">
       <div class="row">
         <TotalInfoArea />
       </div>

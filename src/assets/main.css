@@ -1,3 +1,24 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ccc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #292929;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 header {
     line-height: 1.5;
     max-height: 100vh;
@@ -90,3 +111,58 @@ nav a:first-of-type {
 .total-info-area .navigation-area .btn span {
     font-size: 1rem;
 }
+
+.color-options div {
+    width: 10rem;
+}
+
+.color-options button {
+    width: 30px;
+    height: 30px;
+}
+
+.color-options button svg {
+    position: absolute;
+    font-size: .5rem;
+    left: -1rem!important;
+    top: -1rem!important;
+    border: 2px solid #fff;
+}
+
+.accessories {
+    height: 30rem;
+    overflow: auto;
+    margin-bottom: 10rem;
+}
+
+.accessory {
+    border: 0;
+}
+
+.accessory:hover {
+    border: 1px solid #0000002d;
+    background: #292929;
+    color: #fff;
+}
+
+.accessory .card-header {
+    flex: 1!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessory .card-body {
+    flex: 1!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessory svg {
+    position: relative!important;
+    width: 1rem;
+    height: 1rem;
+}
+
