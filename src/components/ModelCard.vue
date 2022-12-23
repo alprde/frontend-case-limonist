@@ -8,7 +8,7 @@
       <IconCheck class="position-absolute top-0 end-0 d-none"/>
     </div>
     <img
-      :src="`/src/assets/${model.image}`"
+      :src="`/assets/${model.image}`"
       :class="['card-img-top', { 'opacity-100': hover, 'opacity-25': !hover }]"
     />
     <div class="card-body d-flex flex-column align-items-center" v-if="hover">
