@@ -1,6 +1,5 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
-import { MotionPlugin } from "@vueuse/motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
@@ -17,7 +16,6 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 const app = createApp(App);
 
 app.use(createPinia());
-app.use(MotionPlugin);
 app.use(router);
 
 library.add(fas);
