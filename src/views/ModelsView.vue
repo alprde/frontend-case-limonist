@@ -17,13 +17,13 @@ export default {
         model1: {
           id: 1,
           text: "<strong>193.500 TL</strong>'den başlayan fiyatlarla",
-          image: "./src/assets/ibiza.png",
+          image: "ibiza.png",
           selected: false,
         },
         model2: {
           id: 2,
           text: "<strong>200.000 TL</strong>'den başlayan fiyatlarla",
-          image: "./src/assets/arona.png",
+          image: "arona.png",
           selected: false,
         },
       },
